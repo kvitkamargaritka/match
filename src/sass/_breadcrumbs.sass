@@ -1,0 +1,21 @@
+.breadcrumbs
+
+  &__list
+    display: flex
+    flex-direction: row
+
+  &__el
+    padding: 10px
+
+    &:after
+      content: '/'
+      font-size: 20px
+      color: $greyDark
+
+    &:last-child:after
+      content: ''
+
+  &__title
+    +h100
+    color: $greyDark
+    font-size: 25px

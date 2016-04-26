@@ -30,7 +30,9 @@
 
 $pink: #f84a75
 $grey: #e9e8e8
+$greyDark: #75858f
 $darkBlue: #3e485a
+$green: #4cddac
 
 +font('Helvetica Neue', HelveticaNeue)
 +font('Helvetica Neue L', HelveticaNeueL)
@@ -39,140 +41,123 @@ $darkBlue: #3e485a
 +font('Helvetica Neue LTStdRoman', HelveticaNeueLTStdRoman)
 
 =h100
-	font-family: "Helvetica Neue L", Arial, sans-serif
+  font-family: "Helvetica Neue L", Arial, sans-serif
+
 =h200
-	font-family: "Helvetica Neue LTStdRoman", Arial, sans-serif
+  font-family: "Helvetica Neue LTStdRoman", Arial, sans-serif
+
 =h300
-	font-family: "Helvetica Neue", Arial, sans-serif
+  font-family: "Helvetica Neue", Arial, sans-serif
+
 =h400
-	font-family: "Helvetica Neue LTStdMd", Arial, sans-serif
+  font-family: "Helvetica Neue LTStdMd", Arial, sans-serif
+
 =h500
-	font-family: "Helvetica Neue LTStdBd", Arial, sans-serif
-
-
+  font-family: "Helvetica Neue LTStdBd", Arial, sans-serif
 
 body
-	+h300
-	font-family: Arial, sans-serif
-	font-size: 14px
-	line-height: 1.4
-	color: #000
+  +h300
+  font-family: Arial, sans-serif
+  font-size: 14px
+  line-height: 1.4
+  color: #000
 
 a
-	text-decoration: none
-	color: #000
+  text-decoration: none
+  color: #000
+
+.container
+  min-width: 1440px
+  height: auto
 
 .ico
-	display: inline-block
+  display: inline-block
 
-	&_plus
-		width: 17px
-		height: 16px
-		background-image: url(../img/plus.png)
+  &_plus
+    width: 17px
+    height: 16px
+    background-image: url(../img/plus.png)
 
-	&_dashboard
-		width: 27px
-		height: 27px
-		background-image: url(../img/ico-dashboard.png)
+  &_dashboard
+    width: 27px
+    height: 27px
+    background-image: url(../img/ico-dashboard.png)
 
-	&_schedule
-		width: 27px
-		height: 27px
-		background-image: url(../img/ico-schedule.png)
+  &_schedule
+    width: 27px
+    height: 27px
+    background-image: url(../img/ico-schedule.png)
 
-	&_document
-		width: 27px
-		height: 26px
-		background-image: url(../img/ico-document.png)
+  &_document
+    width: 27px
+    height: 26px
+    background-image: url(../img/ico-document.png)
 
-	&_men
-		width: 27px
-		height: 26px
-		background-image: url(../img/ico-men.png)
+  &_men
+    width: 27px
+    height: 26px
+    background-image: url(../img/ico-men.png)
 
-	&_pencil
-		width: 27px
-		height: 27px
-		background-image: url(../img/ico-pencil.png)
+  &_pencil
+    width: 27px
+    height: 27px
+    background-image: url(../img/ico-pencil.png)
 
+.green
+  color: $green
 
+.pink
+  color: $pink
 
 .btn
-	display: inline-block
-	padding: 0 14px
-	border-radius: 16px
-	text-align: center
-	font-size: 21px
-	cursor: pointer
-	&:hover
-		background-color: $grey
+  display: inline-block
+  padding: 0 14px
+  border-radius: 16px
+  text-align: center
+  font-size: 21px
+  cursor: pointer
+  &:hover
+    background-color: $grey
 
-	&_pink
-		color: #fff
-		background-color: $pink
+  &_pink
+    color: #fff
+    background-color: $pink
 
-		&:hover
-			background-color: $grey
+    &:hover
+      background-color: $grey
 
-	&_big
-		font-size: 12px
-		padding: 7px 13px
-		text-transform: uppercase
-		i
-			position: relative
-			top: 3px
+  &_big
+    font-size: 12px
+    padding: 7px 13px
+    text-transform: uppercase
+    i
+      position: relative
+      top: 3px
 
+  &_transparent
+    +h100
+    padding: 6px 30px
+    font-size: 12px
+    text-transform: uppercase
+    color: $pink
+    border: 1px solid $pink
+    border-radius: 20px
+
+    &:hover
+      background-color: #fff
 
 // common blocks
 
-.top-line
-	padding: 25px 18px 19px
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-	border-bottom: 1px solid #DEDEDE
+.content
+  background-color: #f7f8f9
 
-.main
-	display: flex
+  &__top
 
-	&__left
-		background-color: $darkBlue
-
-	&__right
-
-.top-menu
-	font-size: 20px
-
-	&__list
-		display: flex
-		flex-direction: row
-		align-items: center
-
-	&__el
-		padding-left: 4px
-		&:first-child
-			margin-right: 33px
-
-	&__item
-		cursor: pointer
+  &__bottom
+    padding: 30px 30px 0 60px
 
 
-.left-menu
 
-	&__list
-		background-color: $darkBlue
 
-	&__el
-		border-bottom: 1px solid #75858f
-		padding: 24px 4px 23px
-		text-align: center
 
-	&__link
-		display: block
-		font-size: 16px
-		color: #fff
-		opacity: .5
-		i
-			margin-bottom: 6px
 
-	&__text

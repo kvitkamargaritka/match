@@ -1,0 +1,50 @@
+.table
+  text-align: left
+  background-color: #fff
+
+  th
+    +h100
+    padding: 3px 0
+    color: $greyDark
+    font-size: 16px
+    background-color: #f5f6f7
+    cursor: pointer
+
+    &:first-child
+      padding-left: 20px
+      text-align: left
+
+  tr
+    border-bottom: 1px solid #DEDEDE
+    border-top: none
+    &:last-child
+      border-bottom: none
+
+  td
+    padding: 13px 0
+
+    &:first-child
+      padding-left: 20px
+      text-align: left
+      color: #48b1c7
+
+  &_performance
+    tr
+      border-bottom: none
+
+    th
+      background-color: #fff
+
+  &_small
+    tr
+      &:first-child
+        border-bottom: none
+
+    th
+      font-size: 13px
+      background-color: #fff
+
+    td
+      padding: 20px 0
+      &:first-child
+        color: $greyDark
