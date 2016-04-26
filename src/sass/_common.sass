@@ -1,0 +1,178 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+// 			+s(codedby)
+// ## gradient example
+//     	+g(#232323, #5c5c5c);
+//	   horizontal
+//     	+gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +r(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /src/fonts
+// +font(book, cytiapro-black-webfont)
+// and create mixin
+// =book
+// 	font-family: "book", Arial, sans-serif
+
+$pink: #f84a75
+$grey: #e9e8e8
+$darkBlue: #3e485a
+
++font('Helvetica Neue', HelveticaNeue)
++font('Helvetica Neue L', HelveticaNeueL)
++font('Helvetica Neue LTStdBd', HelveticaNeueLTStdBd)
++font('Helvetica Neue LTStdMd', HelveticaNeueLTStdMd)
++font('Helvetica Neue LTStdRoman', HelveticaNeueLTStdRoman)
+
+=h100
+	font-family: "Helvetica Neue L", Arial, sans-serif
+=h200
+	font-family: "Helvetica Neue LTStdRoman", Arial, sans-serif
+=h300
+	font-family: "Helvetica Neue", Arial, sans-serif
+=h400
+	font-family: "Helvetica Neue LTStdMd", Arial, sans-serif
+=h500
+	font-family: "Helvetica Neue LTStdBd", Arial, sans-serif
+
+
+
+body
+	+h300
+	font-family: Arial, sans-serif
+	font-size: 14px
+	line-height: 1.4
+	color: #000
+
+a
+	text-decoration: none
+	color: #000
+
+.ico
+	display: inline-block
+
+	&_plus
+		width: 17px
+		height: 16px
+		background-image: url(../img/plus.png)
+
+	&_dashboard
+		width: 27px
+		height: 27px
+		background-image: url(../img/ico-dashboard.png)
+
+	&_schedule
+		width: 27px
+		height: 27px
+		background-image: url(../img/ico-schedule.png)
+
+	&_document
+		width: 27px
+		height: 26px
+		background-image: url(../img/ico-document.png)
+
+	&_men
+		width: 27px
+		height: 26px
+		background-image: url(../img/ico-men.png)
+
+	&_pencil
+		width: 27px
+		height: 27px
+		background-image: url(../img/ico-pencil.png)
+
+
+
+.btn
+	display: inline-block
+	padding: 0 14px
+	border-radius: 16px
+	text-align: center
+	font-size: 21px
+	cursor: pointer
+	&:hover
+		background-color: $grey
+
+	&_pink
+		color: #fff
+		background-color: $pink
+
+		&:hover
+			background-color: $grey
+
+	&_big
+		font-size: 12px
+		padding: 7px 13px
+		text-transform: uppercase
+		i
+			position: relative
+			top: 3px
+
+
+// common blocks
+
+.top-line
+	padding: 25px 18px 19px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	border-bottom: 1px solid #DEDEDE
+
+.main
+	display: flex
+
+	&__left
+		background-color: $darkBlue
+
+	&__right
+
+.top-menu
+	font-size: 20px
+
+	&__list
+		display: flex
+		flex-direction: row
+		align-items: center
+
+	&__el
+		padding-left: 4px
+		&:first-child
+			margin-right: 33px
+
+	&__item
+		cursor: pointer
+
+
+.left-menu
+
+	&__list
+		background-color: $darkBlue
+
+	&__el
+		border-bottom: 1px solid #75858f
+		padding: 24px 4px 23px
+		text-align: center
+
+	&__link
+		display: block
+		font-size: 16px
+		color: #fff
+		opacity: .5
+		i
+			margin-bottom: 6px
+
+	&__text
