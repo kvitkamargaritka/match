@@ -1,0 +1,46 @@
+.custom-select
+  position: relative
+  height: 25px
+  width: 157px
+  padding: 0
+  margin: 0
+  background-color: #fff
+  border: 1px solid #ccc
+  border-radius: 6px
+
+  &::after
+    position: absolute
+    content: ''
+    top: -1px
+    right: -1px
+    width: 23px
+    height: 25px
+    background-color: $pink
+    border-radius: 0 6px 6px 0
+    pointer-events: none
+
+  select
+    padding: 5px
+    border: none
+    width: 100%
+    height: 100%
+    background-color: #fff
+    appearance: none
+    &:focus
+      outline: none
+
+  i
+    position: absolute
+    top: 0px
+    right: 3px
+    font-size: 25px
+    color: #fff
+    z-index: 1
+    pointer-events: none
+
+  &_small
+    width: 123px
+    margin: 20px
+
+    select
+      padding: 0 0 5px 9px

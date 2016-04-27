@@ -1,15 +1,20 @@
 .breadcrumbs
+  +h100
 
   &__list
     display: flex
     flex-direction: row
+    padding: 8px 0
 
   &__el
-    padding: 10px 0
+    position: relative
+    padding: 0 10px
 
-    &:after
+    &::after
+      position: absolute
+      top: 5px
+      right: -3px
       content: '/'
-      padding: 0 10px
       font-size: 20px
       color: $greyDark
 
@@ -19,4 +24,5 @@
   &__title
     +h100
     color: $greyDark
-    font-size: 25px
+    font-size: 22px
+    letter-spacing: .6px

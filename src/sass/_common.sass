@@ -55,12 +55,15 @@ $green: #4cddac
 =h500
   font-family: "Helvetica Neue LTStdBd", Arial, sans-serif
 
+h1
+  font-size: 54px
+
 body
   +h300
   font-family: Arial, sans-serif
   font-size: 14px
   line-height: 1.4
-  color: #000
+  color: $greyDark
 
 a
   text-decoration: none
@@ -122,15 +125,25 @@ a
 .grey
   color: #ccc
 
+.grey-dark
+  color: $greyDark
+
 .btn
   display: inline-block
   padding: 0 14px
   border-radius: 16px
   text-align: center
-  font-size: 21px
+  font-size: 20px
+  letter-spacing: .4px
   cursor: pointer
   &:hover
     background-color: $grey
+
+  &_color-grey
+    +h100
+    color: $greyDark
+    font-size: 14px
+
 
   &_pink
     color: #fff
@@ -140,9 +153,10 @@ a
       background-color: $grey
 
   &_big
-    font-size: 12px
-    padding: 7px 13px
+    font-size: 11px
+    padding: 3px 10px 8px
     text-transform: uppercase
+    letter-spacing: 0
     i
       position: relative
       top: 3px
@@ -167,15 +181,28 @@ a
     color: $greyDark
     padding-bottom: 7px
 
-// common blocks
+  &_account
+    font-size: 17px
 
-.content
-  background-color: #f7f8f9
 
-  &__top
+.logo
+  width: 92px
 
-  &__bottom
-    padding: 30px 30px 0 60px
+  img
+    width: 100%
+
+.comparison
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  &__text
+    margin: 0 12px
+
+.content-title
+  +h100
+  padding: 10px 0
+  color: $greyDark
 
 .events
 
@@ -183,10 +210,6 @@ a
 
   &__el
     display: inline-block
-
-.time
-  margin: 20px 0
-
 
 
 
