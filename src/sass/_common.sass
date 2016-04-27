@@ -103,11 +103,24 @@ a
     height: 27px
     background-image: url(../img/ico-pencil.png)
 
+  //&_gear
+    width: 20px
+    height: 20px
+    background-image: url(../img/ico-gear.png)
+
+  //&_close
+    width: 14px
+    height: 2px
+    background-image: url(../img/ico-close.png)
+
 .green
   color: $green
 
 .pink
   color: $pink
+
+.grey
+  color: #ccc
 
 .btn
   display: inline-block
@@ -144,7 +157,15 @@ a
     border-radius: 20px
 
     &:hover
-      background-color: #fff
+      background-color: $pink
+      color: #fff
+
+  &_cogwheel
+    padding-top: 3px
+
+  &_close
+    color: $greyDark
+    padding-bottom: 7px
 
 // common blocks
 
@@ -155,6 +176,16 @@ a
 
   &__bottom
     padding: 30px 30px 0 60px
+
+.events
+
+  &__list
+
+  &__el
+    display: inline-block
+
+.time
+  margin: 20px 0
 
 
 
