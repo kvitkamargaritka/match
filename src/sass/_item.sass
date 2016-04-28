@@ -1,16 +1,16 @@
 .item
+  width: 100%
   margin: 30px 0
   background-color: #fff
   border: 1px solid #DEDEDE
-  border-radius: 8px 8px 0 0
+  border-radius: 8px
   box-sizing: border-box
 
   &_performance
-    padding-bottom: 33px
+    padding-bottom: 40px
 
   &_small
     width: 50%
-    border-radius: 8px
 
     .item__bottom
       padding: 20px 10px
@@ -32,6 +32,15 @@
 
   &__title
     +h100
-    padding: 10px
+    padding: 9px 10px
     color: $greyDark
-    font-size: 24px
+    font-size: 21px
+
+  &__figure
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+
+    img
+      margin: 0 15px

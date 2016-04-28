@@ -1,6 +1,5 @@
 .table
   text-align: left
-  background-color: #fff
 
   th
     +h100
@@ -21,9 +20,12 @@
       border-bottom: none
 
   td
+    //width: 10%
+    vertical-align: middle
     padding: 13px 0
 
     &:first-child
+      width: 14%
       padding-left: 20px
       text-align: left
       color: #48b1c7
@@ -34,11 +36,22 @@
       border-bottom: none
 
     th
-      padding-top: 24px
+      padding-top: 18px
       background-color: #fff
 
     td
-      padding: 8px 0
+      width: 11%
+      padding: 5px 0
+      &:first-child
+        width: 11%
+        text-align: center
+      &:nth-of-type(3)
+        width: 15%
+
+      &:last-child
+        padding: 0 15px
+        width: 16%
+        text-align: right
 
   &_small
     tr

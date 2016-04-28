@@ -144,11 +144,11 @@
 		            <ul class="content-menu__list">
 		
 		              <li class="content-menu__el">
-		                <span class="btn btn_color-grey let-big">Active campaigns</span>
+		                <span class="btn btn_color-grey">Active campaigns</span>
 		              </li>
 		
 		              <li class="content-menu__el">
-		                <span class="btn btn_color-grey let-big">Ended campaigns</span>
+		                <span class="btn btn_color-grey">Ended campaigns</span>
 		              </li>
 		
 		            </ul>
@@ -244,7 +244,82 @@
 		            </div><!-- end row__left -->
 		
 		            <div class="row__right">
-		              right
+		              <span class="btn btn_color-grey">
+		                <i class="fa fa-calendar"></i>
+		                Data range
+		                <i class="fa fa-caret-down"></i>
+		              </span>
+		
+		              <div class="row__drop-down">
+		
+		                <table class="calendar">
+		                  <caption>
+		                    <span class="prev">←</span>
+		                    <span class="month">October</span>
+		                    <span class="next">→</span>
+		                  </caption>
+		                  <thead>
+		                  <tr>
+		                    <th>Mo</th>
+		                    <th>Tu</th>
+		                    <th>We</th>
+		                    <th>Th</th>
+		                    <th>Fr</th>
+		                    <th>Sa</th>
+		                    <th>Su</th>
+		                  </tr>
+		                  </thead>
+		                  <tbody>
+		                  <tr>
+		                    <td class="off"><span>31</span></td>
+		                    <td><span>1</span></td>
+		                    <td><span>2</span></td>
+		                    <td><span>3</span></td>
+		                    <td><span>4</span></td>
+		                    <td><span>5</span></td>
+		                    <td><span>6</span></td>
+		                  </tr>
+		                  <tr>
+		                    <td><span>7</span></td>
+		                    <td><span>8</span></td>
+		                    <td><span>9</span></td>
+		                    <td><span>10</span></td>
+		                    <td><span>11</span></td>
+		                    <td><span>12</span></td>
+		                    <td><span>13</span></td>
+		                  </tr>
+		                  <tr>
+		                    <td><span>14</span></td>
+		                    <td><span>15</span></td>
+		                    <td><span>16</span></td>
+		                    <td><span>17</span></td>
+		                    <td class="active"><span>18</span></td>
+		                    <td class="active"><span>19</span></td>
+		                    <td class="active"><span>20</span></td>
+		                  </tr>
+		                  <tr>
+		                    <td class="active"><span>21</span></td>
+		                    <td class="active"><span>22</span></td>
+		                    <td class="active"><span>23</span></td>
+		                    <td class="active"><span>24</span></td>
+		                    <td class="active"><span>25</span></td>
+		                    <td><span>26</span></td>
+		                    <td><span>27</span></td>
+		                  </tr>
+		                  <tr>
+		                    <td><span>28</span></td>
+		                    <td><span>29</span></td>
+		                    <td><span>30</span></td>
+		                    <td class="off"><span>1</span></td>
+		                    <td class="off"><span>2</span></td>
+		                    <td class="off"><span>3</span></td>
+		                    <td class="off"><span>4</span></td>
+		                  </tr>
+		                  </tbody>
+		                </table>
+		
+		              </div><!-- end calendar-box -->
+		
 		            </div><!-- end row__right -->
 		
 		          </div><!-- end row -->
@@ -301,13 +376,17 @@
 		
 		          <div class="item__bottom">
 		
-		            <div class="custom-select custom-select_small">
-		              <select name="select-name">
-		                <option value="Daily" selected>Daily</option>
-		                <option value="Daily">Weekly</option>
-		                <option value="Daily">Monthly Dreakdown</option>
-		              </select>
-		              <i class="fa fa-angle-down"></i>
+		            <div class="row row_lr-padding">
+		
+		              <div class="custom-select custom-select_small">
+		                <select name="select-name">
+		                  <option value="Daily" selected>Daily</option>
+		                  <option value="Daily">Weekly</option>
+		                  <option value="Daily">Monthly Dreakdown</option>
+		                </select>
+		                <i class="fa fa-angle-down"></i>
+		              </div>
+		
 		            </div>
 		
 		            <table class="table">
@@ -524,7 +603,7 @@
 		
 		              <tr>
 		                <td>
-		
+		                  <div class="img-box"></div>
 		                </td>
 		                <td>$234</td>
 		                <td>365,678</td>
@@ -540,6 +619,7 @@
 		
 		              <tr>
 		                <td>
+		                  <div class="img-box"></div>
 		                </td>
 		                <td>$234</td>
 		                <td>365,678</td>
@@ -555,6 +635,7 @@
 		
 		              <tr>
 		                <td>
+		                  <div class="img-box"></div>
 		                </td>
 		                <td>$234</td>
 		                <td>365,678</td>
@@ -570,6 +651,7 @@
 		
 		              <tr>
 		                <td>
+		                  <div class="img-box"></div>
 		                </td>
 		                <td>$234</td>
 		                <td>365,678</td>
@@ -585,7 +667,7 @@
 		
 		              <tr>
 		                <td>
-		
+		                  <div class="img-box"></div>
 		                </td>
 		                <td>$234</td>
 		                <td>365,678</td>
@@ -809,7 +891,7 @@
 		
 		        </div><!-- end item -->
 		
-		        <div class="item item_small">
+		        <div class="item item_small item_geography">
 		
 		          <div class="item__top">
 		
@@ -842,36 +924,45 @@
 		              <ul class="events__list">
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Clicks</span>
+		                  <span class="btn btn_color-grey btn_small">Clicks</span>
 		                </li>
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Impressions</span>
+		                  <span class="btn btn_color-grey btn_small">Impressions</span>
 		                </li>
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Conversions</span>
+		                  <span class="btn btn_color-grey btn_small">Conversions</span>
 		                </li>
 		
 		              </ul>
 		
 		            </div><!-- end events -->
 		
-		            <div class="search">
+		            <div class="info">
+		              <h6 class="info__title">Most Conversions</h6>
+		              <div class="info__border"></div>
+		              <table>
+		                <tr>
+		                  <th>Australia</th>
+		                  <th>New Zealand</th>
+		                  <th>Sweden</th>
+		                  <th>Germany</th>
+		                </tr>
+		                <tr>
+		                  <td>440</td>
+		                  <td>357</td>
+		                  <td>224</td>
+		                  <td>180</td>
+		                </tr>
+		              </table>
+		              <div class="item__figure">
+		                <span>2,000 clicks</span>
+		                <img src="../img/geography-figure.png" alt="figure"/>
+		                <span>5,000 clicks</span>
+		              </div>
 		
-		              <form action="" class="search__form">
-		
-		                <div class="search__field">
-		                  <input type="search" class="input__el"/>
-		                </div>
-		
-		                <div class="search__action">
-		                  <button class="btn btn_search"></button>
-		                </div>
-		
-		              </form>
-		
-		            </div><!-- end search-->
+		            </div>
 		
 		          </div><!-- end item__bottom -->
 		
@@ -910,28 +1001,38 @@
 		              <ul class="events__list">
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Conversions</span>
+		                  <span class="btn btn_color-grey btn_small">Conversions</span>
 		                </li>
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Impressions</span>
+		                  <span class="btn btn_color-grey btn_small">Impressions</span>
 		                </li>
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Clicks</span>
+		                  <span class="btn btn_color-grey btn_small">Clicks</span>
 		                </li>
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">CPA</span>
+		                  <span class="btn btn_color-grey btn_small">CPA</span>
 		                </li>
 		
 		                <li class="events__el">
-		                  <span class="btn btn_color-grey">Cost</span>
+		                  <span class="btn btn_color-grey btn_small">Cost</span>
 		                </li>
 		
 		              </ul>
 		
 		            </div><!-- end events -->
+		
+		              <div class="indication">
+		                <div class="indication__window"></div>
+		              </div>
+		
+		            <div class="item__figure">
+		              <span>0 clicks</span>
+		              <img src="../img/performance-figure.png" alt="figure"/>
+		              <span>2,000 clicks</span>
+		            </div>
 		
 		          </div><!-- end item__bottom -->
 		
