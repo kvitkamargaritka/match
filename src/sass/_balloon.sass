@@ -1,0 +1,99 @@
+.balloon
+  position: absolute
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 24px 13px
+  top: 34px
+  right: -1px
+  width: 258px
+  height: 112px
+  background-color: #fff
+  font-size: 11px
+  text-transform: uppercase
+  border-radius: 7px
+  box-shadow: 5px 5px 20px 0 rgba(122, 122, 125, .5)
+
+  &::after
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 0 8px 8px
+    border-color: #FFFFFF transparent
+    display: block
+    width: 0
+    z-index: 1
+    top: -8px
+    left: 210px
+
+
+  &_small
+    display: block
+    padding: 14px
+    top: 145px
+    left: 83px
+    width: 110px
+    height: 80px
+    background-color: #fff
+    font-size: 11px
+    border-radius: 7px
+    z-index: 5
+    text-transform: none
+
+  &_left
+    top: 16px
+    left: 144px
+
+    &::after
+      right: initial
+      top: initial
+      left: -11px
+      bottom: 39px
+      border-width: 10px 16px 10px 0
+      border-color: transparent #fff
+
+  &_right
+
+    &::after
+      top: initial
+      left: initial
+      bottom: 22px
+      right: -11px
+      border-width: 10px 0 10px 16px
+      border-color: transparent #fff
+
+  &__list
+    +h500
+    margin-right: 11px
+    font-size: 12px
+
+    &:first-child
+      +h100
+      font-size: 11px
+      opacity: .5
+
+      li
+        margin-bottom: 11px
+
+  &__el
+    margin-bottom: 10px
+
+
+  &__link
+    padding: 8px 12px 0
+    color: $greyDark
+    text-align: center
+    border: 1px dashed $greyDark
+
+    &:hover
+      opacity: .8
+
+    i
+      font-size: 18px
+
+  &__text
+    text-align: left
+
+    &_bold
+      font-weight: bold
+
