@@ -31,7 +31,15 @@ $(document).ready(function() {
 
   if ($('#select4').length >= 1) {
     $('#select4').ddslick({
-      //width: 170,
+      onSelected: function (selectedData) {
+        //callback function: do something with selectedData;
+      }
+    })
+  }
+
+  if ($('#select5').length >= 1) {
+    $('#select5').ddslick({
+      width: 90,
       onSelected: function (selectedData) {
         //callback function: do something with selectedData;
       }
