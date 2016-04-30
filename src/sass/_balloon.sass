@@ -4,15 +4,13 @@
   flex-direction: row
   justify-content: space-between
   padding: 24px 13px
-  top: 34px
-  right: -1px
-  width: 258px
-  height: 112px
   background-color: #fff
   font-size: 11px
   text-transform: uppercase
   border-radius: 7px
   box-shadow: 5px 5px 20px 0 rgba(122, 122, 125, .5)
+  z-index: 5
+
 
   &::after
     content: ''
@@ -26,6 +24,21 @@
     top: -8px
     left: 210px
 
+  &_account
+    top: 15px
+    right: 0
+    width: 258px
+    height: 112px
+
+  &_calendar
+    top: 15px
+    right: 0
+    text-transform: none
+    padding: 60px 50px 75px
+
+    &::after
+      left: initial
+      right: 30px
 
   &_small
     display: block
@@ -37,7 +50,6 @@
     background-color: #fff
     font-size: 11px
     border-radius: 7px
-    z-index: 5
     text-transform: none
 
   &_left
@@ -61,6 +73,10 @@
       right: -11px
       border-width: 10px 0 10px 16px
       border-color: transparent #fff
+
+  &__item
+    position: relative
+    margin: 0 5px
 
   &__list
     +h500

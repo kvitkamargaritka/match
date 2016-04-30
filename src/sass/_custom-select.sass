@@ -1,45 +1,67 @@
-.custom-select
-  position: relative
-  height: 26px
-  width: 157px
-  padding: 0
-  margin: 0
-  background-color: #fff
+.dd-selected
+  +h100
+  display: block
+  //font-weight: bold
+  overflow: hidden
+  padding: 0 !important
+  background: none !important
+
+.dd-option
+  padding: 0 !important
+
+.dd-selected-text
+  color: #75858f !important
+  font-size: 12px !important
+
+.dd-option-text
+  line-height: 25px !important
+
+.dd-option-image, .dd-selected-image
+  margin: 7px 5px 0 !important
+
+.dd-select
   border: 1px solid #ccc
-  border-radius: 6px
+  border-radius: 6px !important
+  -webkit-border-radius: 6px !important
+  cursor: pointer
+  height: 27px
+  position: relative
+  background: none !important
+  background-image: url(../img/ico-select-down.png) !important
+  background-position: right center !important
+  background-repeat: no-repeat !important
+  background-color: #fff !important
+  max-width: 175px
 
-  &::after
-    position: absolute
-    content: ''
-    top: -1px
-    right: -1px
-    width: 23px
-    height: 26px
-    background-color: $pink
-    border-radius: 0 6px 6px 0
-    pointer-events: none
+.item-geography .dd-select
+  background-image: url(../img/ico-select-search.png) !important
+  background-position: right center !important
+  background-repeat: no-repeat !important
+  background-color: #fff !important
+  //max-width: 237px !important
 
-  select
-    padding: 5px
-    border: none
-    width: 100%
-    height: 100%
-    background-color: #fff
-    appearance: none
-    &:focus
-      outline: none
+.item-geography .dd-selected-text
+  margin-left: 5px
 
-  i
-    position: absolute
-    top: 0px
-    right: 3px
-    font-size: 25px
-    color: #fff
-    z-index: 1
-    pointer-events: none
+.item-geography
+  .dd-select,
+  .dd-options
+    max-width: 210px
 
-  &_small
-    width: 110px
+.item-first
+  .dd-select,
+  .dd-options
+    max-width: 100px
 
-    select
-      padding: 0 0 5px 9px
+.item-first .dd-selected-text
+  margin-left: 5px
+
+
+
+.dd-options
+  max-width: 175px
+  max-height: 150px
+  overflow-y: auto
+
+.dd-pointer-down
+  display: none !important

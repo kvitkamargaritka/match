@@ -93,15 +93,15 @@
 
               <li class="content-menu__el">
 
-                <span class="btn btn_color-grey btn_account">
+                <span class="btn btn_color-grey btn_account" id="btn-acc-info">
                   <i class="fa fa-user"></i>
                   Account Details
                   <i class="fa fa-caret-down"></i>
                 </span>
 
-                <div class="content-menu__drop-down">
+                <div class="drop-down">
 
-                  <div class="balloon">
+                  <div class="balloon balloon_account">
 
                     <ul class="balloon__list">
                       <li class="balloon__el">total budget</li>
@@ -148,11 +148,11 @@
                 <div class="comparison__item">
 
                   <div class="custom-select">
-                    <select name="select-name">
-                      <option value="Conversions">Conversions</option>
-                      <option value="Impressions">Impressions</option>
+                    <select name="select-name" id="select1">
+                      <option value="Conversions" data-imagesrc="./img/ico-conversions.png">Conversions</option>
+                      <option value="Impressions" data-imagesrc="./img/ico-impressions.png">Impressions</option>
                     </select>
-                    <i class="fa fa-angle-down"></i>
+                    <!--<i class="fa fa-angle-down"></i>-->
                   </div>
 
                 </div><!-- end comparison__item -->
@@ -162,11 +162,11 @@
                 <div class="comparison__item">
 
                   <div class="custom-select">
-                    <select name="select-name">
-                      <option value="Impressions">Impressions</option>
-                      <option value="Conversions">Conversions</option>
+                    <select name="select-name" id="select2">
+                      <option value="Impressions" data-imagesrc="./img/ico-impressions.png">Impressions</option>
+                      <option value="Conversions" data-imagesrc="./img/ico-conversions.png">Conversions</option>
                     </select>
-                    <i class="fa fa-angle-down"></i>
+                    <!--<i class="fa fa-angle-down"></i>-->
                   </div>
 
                 </div><!-- end comparison__item -->
@@ -176,79 +176,15 @@
             </div><!-- end row__left -->
 
             <div class="row__right">
-              <span class="btn btn_color-grey">
+              <span class="btn btn_color-grey" id="btn-data-range">
                 <i class="fa fa-calendar"></i>
                 Data range
                 <i class="fa fa-caret-down"></i>
               </span>
 
-              <div class="row__drop-down">
+              <div class="drop-down">
 
-                <table class="calendar">
-                  <caption>
-                    <span class="prev">←</span>
-                    <span class="month">October</span>
-                    <span class="next">→</span>
-                  </caption>
-                  <thead>
-                  <tr>
-                    <th>Mo</th>
-                    <th>Tu</th>
-                    <th>We</th>
-                    <th>Th</th>
-                    <th>Fr</th>
-                    <th>Sa</th>
-                    <th>Su</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td class="off"><span>31</span></td>
-                    <td><span>1</span></td>
-                    <td><span>2</span></td>
-                    <td><span>3</span></td>
-                    <td><span>4</span></td>
-                    <td><span>5</span></td>
-                    <td><span>6</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>7</span></td>
-                    <td><span>8</span></td>
-                    <td><span>9</span></td>
-                    <td><span>10</span></td>
-                    <td><span>11</span></td>
-                    <td><span>12</span></td>
-                    <td><span>13</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>14</span></td>
-                    <td><span>15</span></td>
-                    <td><span>16</span></td>
-                    <td><span>17</span></td>
-                    <td class="active"><span>18</span></td>
-                    <td class="active"><span>19</span></td>
-                    <td class="active"><span>20</span></td>
-                  </tr>
-                  <tr>
-                    <td class="active"><span>21</span></td>
-                    <td class="active"><span>22</span></td>
-                    <td class="active"><span>23</span></td>
-                    <td class="active"><span>24</span></td>
-                    <td class="active"><span>25</span></td>
-                    <td><span>26</span></td>
-                    <td><span>27</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>28</span></td>
-                    <td><span>29</span></td>
-                    <td><span>30</span></td>
-                    <td class="off"><span>1</span></td>
-                    <td class="off"><span>2</span></td>
-                    <td class="off"><span>3</span></td>
-                    <td class="off"><span>4</span></td>
-                  </tr>
-                  </tbody>
-                </table>
+                //=include balloon-calendar.html
 
               </div><!-- end calendar-box -->
 
