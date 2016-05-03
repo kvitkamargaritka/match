@@ -1,0 +1,615 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Match2One</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#fff">
+  <link rel="stylesheet" media="all" href="css/fonts/font-awesome/css/font-awesome.min.css" >
+  <link rel="stylesheet" media="all" href="css/style.css" >
+  <script src="js/app.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+
+  <div class="container">
+    <div class="top-line">
+    
+      <div class="top-line__left">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo.png" alt="Match2One" class="logo__img">
+          </a>
+        </div>
+      </div><!-- end top-line__left -->
+    
+      <div class="top-line__right">
+        <div class="top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__el">
+    
+              <span class="btn btn_pink btn_big">
+                <i class="ico ico_plus"></i>
+                new campaign
+              </span>
+    
+            </li>
+    
+            <li class="top-menu__el">
+    
+              <span class="btn">
+                <i class="fa fa-bell"></i>
+              </span>
+    
+            </li>
+    
+            <li class="top-menu__el">
+    
+              <span class="btn">
+                <i class="fa fa-cog"></i>
+              </span>
+    
+            </li>
+    
+            <li class="top-menu__el">
+    
+              <span class="btn">
+                <i class="fa fa-sign-in"></i>
+              </span>
+    
+            </li>
+          </ul><!-- top-menu__list -->
+        </div><!-- end top-menu -->
+      </div><!-- end top-line__right -->
+    
+    </div><!-- end top-line -->
+    
+
+    <main class="main">
+
+      <div class="main__left">
+
+        <nav class="left-menu">
+        
+          <ul class="left-menu__list">
+        
+            <li class="left-menu__el">
+              <a href="#"
+                 class="left-menu__link left-menu__link_is-active">
+                <i class="ico ico_dashboard"></i>
+                <br>
+                <span class="left-menu__text">
+                  Dashboard
+                </span>
+              </a>
+            </li>
+        
+            <li class="left-menu__el">
+              <a href="#" class="left-menu__link">
+                <i class="ico ico_schedule"></i>
+                <br>
+                <span class="left-menu__text">
+                  Campaigns
+                </span>
+              </a>
+            </li>
+        
+            <li class="left-menu__el">
+              <a href="#" class="left-menu__link">
+                <i class="ico ico_document"></i>
+                <br>
+                <span class="left-menu__text">
+                  Reports
+                </span>
+              </a>
+            </li>
+        
+            <li class="left-menu__el">
+              <a href="#" class="left-menu__link">
+                <i class="ico ico_pencil"></i>
+                <br>
+                <span class="left-menu__text">
+                  Creative<br> Suite
+                </span>
+              </a>
+            </li>
+        
+            <li class="left-menu__el">
+              <a href="#" class="left-menu__link">
+                <i class="ico ico_men"></i>
+                <br>
+                <span class="left-menu__text">
+                  Audience<br> Builder
+                </span>
+              </a>
+            </li>
+        
+          </ul><!-- end left-menu__list -->
+        
+        </nav><!-- end left-menu -->
+
+      </div><!-- end main__left -->
+
+      <div class="main__right">
+
+        <div class="content">
+
+          <div class="content__top">
+
+            <div class="content-menu">
+
+              <div class="content-menu__left">
+
+              </div><!-- end content-menu__left -->
+
+              <div class="content-menu__right">
+
+                <ul class="content-menu__list">
+
+                  <li class="content-menu__el">
+
+                    <span class="btn btn_color-grey btn_account" id="btn-acc-info">
+                      <i class="fa fa-user"></i>
+                      Account Details
+                      <i class="fa fa-caret-down"></i>
+                    </span>
+
+                    <div class="drop-down">
+
+                      <div class="balloon balloon_account">
+
+                        <ul class="balloon__list">
+                          <li class="balloon__el">total budget</li>
+                          <li class="balloon__el">spend</li>
+                          <li class="balloon__el">remaining</li>
+                        </ul>
+
+                        <ul class="balloon__list">
+                          <li class="balloon__el">$12,000</li>
+                          <li class="balloon__el">$7,241</li>
+                          <li class="balloon__el">$4,759</li>
+                        </ul>
+
+                        <a  class="balloon__link" href="#">
+                          <i class="fa fa-plus-square-o"></i>
+                          <br>
+                          add
+                          <br>
+                          funds
+                        </a>
+
+                      </div><!-- end account-info -->
+
+                    </div><!-- end content-menu__drop-down -->
+
+                  </li>
+
+                </ul>
+
+              </div><!--content content-menu__right -->
+
+            </div><!-- end content-menu -->
+
+          </div><!-- end content__top -->
+
+          <div class="content__bottom">
+
+            <div class="item item_active-campaigns">
+            
+              <div class="item__top">
+            
+                <div class="item__left">
+            
+                  <div class="item__nav">
+            
+                    <ul class="nav">
+            
+                      <li class="nav__el">
+                        <span class="nav__text is-active">Active campaigns</span>
+                      </li>
+            
+                      <li class="events__el">
+                        <span class="nav__text">Draft campaigns</span>
+                      </li>
+            
+                      <li class="events__el">
+                        <span class="nav__text">Ended campaigns</span>
+                      </li>
+            
+                    </ul>
+            
+                  </div><!-- end item__nav -->
+            
+                </div><!-- end item__left -->
+            
+                <div class="item__right"></div><!-- end item__right -->
+            
+              </div><!-- end item__top -->
+            
+              <div class="item__bottom">
+            
+                <div class="row">
+                  <div class="row__left">
+            
+                    <h1 class="item__title">
+                      Active Campaigns
+                    </h1>
+            
+                  </div>
+                  <div class="row__right">
+            
+                    <div class="search">
+                      <form action="" class="search__campaigns">
+            
+                        <div class="search__field">
+                          <div class="inpunt">
+                            <input type="search" class="input__el" placeholder="Search term goes here"/>
+                          </div>
+                        </div>
+            
+                        <div class="search__action">
+                          <button class="btn_search">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+            
+                      </form>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <table class="table table_active-campaigns">
+            
+                  <tr>
+                    <th>Campaign name</th>
+                    <th>
+                      Goal
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      CPM
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      eCPM
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      CPC
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      eCPC
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      CPA
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      eCPA
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      CTR
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      Clicks
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      Conversion
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th>
+                      Spend
+                      <i class="fa fa-caret-down"></i>
+                      <!--<i class="fa fa-caret-up"></i>TODO: use JS for toggling arrows/states-->
+                    </th>
+                    <th></th>
+            
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPA $80
+                      <span class="green arrow-up">
+                        <i class="fa fa-arrow-up"></i>
+                        2%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPM $1,85
+                      <span class="green arrow-up">
+                        <i class="fa fa-arrow-up"></i>
+                        3%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPC $1,20
+                      <span class="pink arrow-down">
+                        <i class="fa fa-arrow-down"></i>
+                        4%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CTR 1,5%
+                      <span class="pink arrow-down">
+                        <i class="fa fa-arrow-down"></i>
+                        4%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPA $80
+                      <span class="green arrow-up">
+                        <i class="fa fa-arrow-up"></i>
+                        2%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPM $1,85
+                      <span class="green arrow-up">
+                        <i class="fa fa-arrow-up"></i>
+                        3%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPC $1,20
+                      <span class="pink arrow-down">
+                        <i class="fa fa-arrow-down"></i>
+                        4%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CTR 1,5%
+                      <span class="pink arrow-down">
+                        <i class="fa fa-arrow-down"></i>
+                        4%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPA $80
+                      <span class="green arrow-up">
+                        <i class="fa fa-arrow-up"></i>
+                        2%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Campaign name</td>
+                    <td>
+                      CPM $1,85
+                      <span class="green arrow-up">
+                        <i class="fa fa-arrow-up"></i>
+                        3%
+                      </span>
+                    </td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td>
+                      <span class="btn btn_blue">edit</span>
+                      <span class="btn btn_blue">duplicate</span>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>Total</td>
+                    <td></td>
+                    <td>$748</td>
+                    <td>700,678</td>
+                    <td>1,400</td>
+                    <td>0,17%</td>
+                    <td>$0,54</td>
+                    <td>$0,54</td>
+                    <td>$0,17%</td>
+                    <td>27</td>
+                    <td>0,17%</td>
+                    <td>$27,7</td>
+                    <td></td>
+                  </tr>
+            
+                </table><!-- end table -->
+            
+            
+              </div><!-- end item__bottom -->
+            
+            </div><!-- end item -->
+
+          </div><!-- end content__bottom -->
+
+        </div><!-- end content -->
+
+      </div><!-- end main__right -->
+
+    </main><!-- end main -->
+
+  </div>
+  <!-- END container-->
+
+</div>
+<!-- END out-->
+</body>
+</html>

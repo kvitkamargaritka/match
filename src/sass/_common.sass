@@ -58,6 +58,9 @@ $green: #4cddac
 h1
   font-size: 54px
 
+h4
+  font-size: 21px
+
 h6
   +h100
   font-size: 13px
@@ -68,6 +71,7 @@ body
   font-size: 14px
   line-height: 1.4
   color: $greyDark
+  min-height: 100%
 
 a
   text-decoration: none
@@ -75,7 +79,11 @@ a
 
 .container
   min-width: 1440px
-  height: auto
+  min-height: 100%
+
+.out
+  min-height: 100%
+
 
 .green
   color: $green
@@ -122,3 +130,24 @@ a
   height: 36px
   background-image: url("../img/img-desktop.jpg")
   background-size: cover
+
+.nav
+  display: flex
+  flex-direction: row
+
+  &__text
+    padding: 2px 14px
+    border-radius: 16px
+    text-align: center
+    font-size: 14px
+    letter-spacing: .4px
+    cursor: pointer
+    user-select: none
+    opacity: .5
+    &:hover
+      background-color: $grey
+      cursor: pointer
+
+  .is-active
+    opacity: 1
+    background-color: $grey
